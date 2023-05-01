@@ -2,7 +2,7 @@
 # This is a basic workflow to help you get started with Actions
 name: Deploy Sample App
 env:
-  RESOURCE_GROUP: 'aksrunners-rg'
+  RESOURCE_GROUP: 'im-sandbox-nagarajum'
   CLUSTER_NAME: 'aksrunners-aks'
 # Controls when the action will run. 
 on:
