@@ -32,7 +32,7 @@ jobs:
       uses: azure/login@v1
       with:
           client-id: "fcbaa45a-b07d-4675-bb03-4ed105f0b94e"
-          tenant-id: "NG7GzXVnO_eshMInDIg.7y5XXggRbjQ9ZR"
+          tenant-id: "4e31fdef-8b04-47cb-a9f6-8c0b2ad482e1"
           subscription-id: "d105f22e-7313-4267-b3b2-572544fc707a"
     - name: deploy
       uses: azure/arm-deploy@v1
