@@ -5,7 +5,7 @@ env:
   RESOURCE_GROUP: 'aksrunners-rg'
   CLUSTER_NAME: 'aksrunners-aks'
   ADMIN_USERNAME: 'aksadmin'
-  REGION: 'westeurope'
+  REGION: 'East US'
   REGISTRY: ghcr.io
   IMAGE_NAME: "${{ github.repository }}"
 # Controls when the action will run. 
@@ -31,13 +31,13 @@ jobs:
     - name: 'Az CLI login'
       uses: azure/login@v1
       with:
-          client-id: ${{ secrets.AZURE_CLIENT_ID }}
-          tenant-id: ${{ secrets.AZURE_TENANT_ID }}
-          subscription-id: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
+          client-id: "fcbaa45a-b07d-4675-bb03-4ed105f0b94e"
+          tenant-id: "NG7GzXVnO_eshMInDIg.7y5XXggRbjQ9ZR"
+          subscription-id: "d105f22e-7313-4267-b3b2-572544fc707a"
     - name: deploy
       uses: azure/arm-deploy@v1
       with:
-        subscriptionId: ${{ secrets.AZURE_SUBSCRIPTION }}
+        subscriptionId: "d105f22e-7313-4267-b3b2-572544fc707a"
         scope: subscription
         region: ${{ env.REGION }}
         template: ./infra/main.bicep
